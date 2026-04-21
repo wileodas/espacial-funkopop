@@ -199,6 +199,10 @@ section{
     z-index: 2;
 }
 
+.menu-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 700px) {
 
     header {
@@ -209,7 +213,7 @@ section{
         padding: 20px;
     }
 
-     .menu-mobile {
+    .menu-mobile {
         display: block;
         background: none;
         border: none;
@@ -220,10 +224,18 @@ section{
 
     nav {
         display: none;
+        width: 100%;
     }
 
     nav.ativo {
         display: block;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        border-radius: 12px;
+        backdrop-filter: blur(20px);
     }
 
     nav ul {
@@ -273,8 +285,4 @@ section{
     .divImagens img {
         width: 100%;
     }
-}
-
-.menu-mobile {
-    display: none;
 }
