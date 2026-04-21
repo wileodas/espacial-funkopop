@@ -218,6 +218,74 @@ section{
 
 @media screen and (max-width: 700px) {
 
+    .card{
+        width: 49%;
+    }
+    .divImagens{
+        img{
+            width: 49%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .secao1 h2 {
+        font-size: 12vw;
+        text-align: center;
+    }
+
+    .conteudoPrincipal h1 {
+        font-size: 32px;
+    }
+
+    .conteudoPrincipal p {
+        font-size: 14px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .botoes {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .botaoPrimario,
+    .botaoSecundario {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .tituloSecao {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .divImagens img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+
     header {
         display: flex;
         justify-content: space-between;
@@ -226,7 +294,7 @@ section{
         padding: 20px;
     }
 
-     .menu-mobile {
+    .menu-mobile {
         display: block;
         background: none;
         border: none;
@@ -237,10 +305,18 @@ section{
 
     nav {
         display: none;
+        width: 100%;
     }
 
     nav.ativo {
         display: block;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        border-radius: 12px;
+        backdrop-filter: blur(20px);
     }
 
     nav ul {
@@ -290,8 +366,4 @@ section{
     .divImagens img {
         width: 100%;
     }
-}
-
-.menu-mobile {
-    display: none;
 }
