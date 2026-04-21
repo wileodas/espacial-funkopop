@@ -1,20 +1,19 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-html {
+html{
     scroll-behavior: smooth;
 }
 
-body {
+body{
     background-color: #030013;
     color: white;
     font-family: "Poppins";
 }
 
-button {
+button{
     font-family: "Poppins";
     display: flex;
     justify-content: center;
@@ -24,233 +23,208 @@ button {
     outline: none;
     font-size: 16px;
     opacity: 0.8;
-    transition: all .3s;
-    cursor: pointer;
+    transition: all.3s;
 }
-
-button:hover {
+button:hover{
     opacity: 1;
 }
-
-p {
+p{
     max-width: 600px;
     text-align: center;
     opacity: 0.8;
 }
 
-a {
+a{
     color: white;
-    opacity: 0.7;
-    transition: all .3s;
-    text-decoration: none;
+    opacity: .7;
+    transition: all.3s;
+    text-decoration-line: none;
+    &:hover{
+        opacity: 1;
+    }
 }
 
-a:hover {
-    opacity: 1;
-}
-
-header {
+header{
     width: 100%;
     display: flex;
+    padding: 4%;
     justify-content: space-between;
     align-items: center;
-    padding: 4%;
     position: fixed;
     z-index: 99;
+
+    ul{
+        display: flex;
+        gap: 24px;
+        list-style-type:none;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px 30px;
+        border-radius: 12px;
+        backdrop-filter: blur(20px);
+        font-size: 16px;
+    }
+
 }
 
-header ul {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px 30px;
-    border-radius: 12px;
-    backdrop-filter: blur(20px);
-    font-size: 16px;
-}
-
-.logotipo {
+.logotipo{
     width: 70px;
 }
 
-.menu-mobile {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 32px;
-    cursor: pointer;
-}
-
-section {
+section{
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 4%;
 }
 
-.secao1 {
-    background-image: url("assets/bg-sc1.svg");
+.secao1{
+    background-image:url("assets/bg-sc1.svg") ;
     background-size: cover;
     background-position: center;
     height: 100vh;
     justify-content: center;
     align-items: center;
+
+    h2{
+        font-size: 6vw;
+        color: rgb(218, 201, 201);
+        mix-blend-mode: color-dodge;
+    }
 }
 
-.secao1 h2 {
-    font-size: 6vw;
-    color: rgb(218, 201, 201);
-    mix-blend-mode: color-dodge;
-}
-
-.conteudoPrincipal {
+.conteudoPrincipal{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+        font-weight: 500;
+    }
+    p{
+        font-size: 16px;
+    }
 }
 
-.conteudoPrincipal h1 {
-    font-size: 50px;
-    text-align: center;
-    font-weight: 500;
-}
-
-.conteudoPrincipal p {
-    font-size: 16px;
-}
-
-.botoes {
+.botoes{
     display: flex;
     gap: 20px;
     margin-top: 28px;
+   
 }
 
-.botaoPrimario {
+.botaoPrimario{
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px 20px 20px 25px;
     gap: 12px;
+
+    img{
+        width: 40px;
+    }
 }
 
-.botaoPrimario img {
-    width: 40px;
-}
-
-.botaoSecundario {
+.botaoSecundario{
     padding: 16px;
     background-color: rgba(255, 255, 255, 0.103);
     color: rgba(255, 255, 255, 0.9);
 }
 
-.tituloSecao {
+.tituloSecao{
+
     font-size: 47px;
     font-weight: 500;
 }
 
-.secao2 {
+.secao2{
     align-items: center;
     background-image: url(assets/bg-sc2.svg);
-    position: relative;
-}
+    position:relative;
 
-.secao2 p {
-    text-align: left;
-}
-
-.secao2::before {
-    content: "";
+    p{
+        text-align: left;
+    }
+}   
+.secao2::before{
+    content:"";
     width: 100%;
     height: 100%;
-    background: linear-gradient(#030113 20%, #03011300, #030113);
+    background:linear-gradient(#030113 20%, #03011300, #030113);
     position: absolute;
     top: 0;
     left: 0;
+
+
 }
 
-.divCards {
+.divCards{
     display: flex;
     flex-wrap: wrap;
-    margin: 40px 0 120px;
-    z-index: 2;
+    margin:40px 0px 120px;
 }
 
-.card {
+.card{
     width: 32%;
-    padding: 32px 20px;
+    padding: 32px 20px ;
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+        margin: 20px 0px 4px;
+
+    }
+    img{
+        width: 70px;
+    }
 }
 
-.card h3 {
-    font-size: 24px;
-    font-weight: 500;
-    margin: 20px 0 4px;
-}
-
-.card img {
-    width: 70px;
-}
-
-.branco {
+.branco{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
+    
 }
 
-.divImagens {
+.divImagens{
     display: flex;
     flex-wrap: wrap;
-    margin: 52px 0 80px;
-    gap: 8px 0.5%;
+    margin: 52px 0px 80px;
+    gap: 8px .5%;
+    img{
+        width:24%;
+        ;
+    }
 }
 
-.divImagens img {
-    width: 24%;
-}
-
-.tituloSecao {
+.tituloSecao, .divCards{
     z-index: 2;
 }
-
-/* RESPONSIVO MOBILE */
 
 @media screen and (max-width: 700px) {
 
-    /* logo esquerda + botão direita */
+    .card{
+        width: 49%;
+    }
+    .divImagens{
+        img{
+            width: 49%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
+        flex-direction: column;
+        gap: 20px;
         padding: 20px;
     }
 
-    .menu-mobile {
-        display: block;
-    }
-
-    nav {
-        display: none;
-        width: 100%;
-    }
-
-    nav.ativo {
-        display: block;
-        position: absolute;
-        top: 90px;
-        right: 20px;
-        background: rgba(255, 255, 255, 0.1);
-        padding: 20px;
-        border-radius: 12px;
-        backdrop-filter: blur(20px);
-    }
-
-    nav ul {
-        display: flex;
+    header ul {
         flex-direction: column;
         align-items: center;
         gap: 16px;
-        list-style: none;
-        margin-top: 0;
+        width: 100%;
     }
 
     .secao1 h2 {
@@ -291,5 +265,47 @@ section {
 
     .divImagens img {
         width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        flex-direction: row;
+    }
+
+    .menu-mobile {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav.ativo {
+        display: block;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        border-radius: 12px;
+        backdrop-filter: blur(20px);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        list-style: none;
     }
 }
