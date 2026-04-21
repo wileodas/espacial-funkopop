@@ -17,6 +17,15 @@
 <body>
     <header>
         <img class="logotipo" src="assets/logopng.png" alt="Logotipo do Site">
+        <button class="menu-mobile" onclick="toggleMenu()">☰</button>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#info">Como Funciona?</a></li>
+                <li><a href="#trabalhos">Galeria</a></li>
+            </ul>
+        </nav>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -32,8 +41,12 @@
             <h1>Espacial Funko Pop</h1>
             <p>Eternize alguém especial com um Funko Pop personalizado feito à mão.</p>
             <div class="botoes">
-                <button onclick="window.location.href='//www.instagram.com/espacial.funkopop?igsh=ZHNwYWtmOWFiYTU1'" class="botaoPrimario">Orçamento gratuito <img src="assets/botao-de-seta-para-cima.png" alt=""></button>
-                <button onclick="window.location.href='//wa.me/5588994044428?text=Olá%20William,%20quero%20saber%20mais!'" class="botaoSecundario">Entrar em contato</button>
+                <button onclick="window.location.href='//www.instagram.com/espacial.funkopop?igsh=ZHNwYWtmOWFiYTU1'"
+                    class="botaoPrimario">Orçamento gratuito <img src="assets/botao-de-seta-para-cima.png"
+                        alt=""></button>
+                <button
+                    onclick="window.location.href='//wa.me/5588994044428?text=Olá%20William,%20quero%20saber%20mais!'"
+                    class="botaoSecundario">Entrar em contato</button>
             </div>
         </div>
     </section>
@@ -71,7 +84,8 @@
             <div class="card">
                 <img src="assets/6-circle.svg" alt="Produto totalmente personalizado">
                 <h3>Detalhe importante!</h3>
-                <p>Acompanha uma caixa personalizada da espacial com todo afeto e carinho em um textinho personalizado seu ou de quem irá presentear. </p>
+                <p>Acompanha uma caixa personalizada da espacial com todo afeto e carinho em um textinho personalizado
+                    seu ou de quem irá presentear. </p>
             </div>
         </div>
         <!-- SEÇÃO TRABALHOS -->
@@ -88,6 +102,13 @@
             <img src="assets/img8.jpeg" alt="">
         </div>
     </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("ativo");
+        }
+    </script>
 </body>
 
 </html>
