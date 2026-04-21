@@ -1,19 +1,20 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: #030013;
     color: white;
     font-family: "Poppins";
 }
 
-button{
+button {
     font-family: "Poppins";
     display: flex;
     justify-content: center;
@@ -25,26 +26,29 @@ button{
     opacity: 0.8;
     transition: all.3s;
 }
-button:hover{
+
+button:hover {
     opacity: 1;
 }
-p{
+
+p {
     max-width: 600px;
     text-align: center;
     opacity: 0.8;
 }
 
-a{
+a {
     color: white;
     opacity: .7;
     transition: all.3s;
     text-decoration-line: none;
-    &:hover{
+
+    &:hover {
         opacity: 1;
     }
 }
 
-header{
+header {
     width: 100%;
     display: flex;
     padding: 4%;
@@ -53,10 +57,10 @@ header{
     position: fixed;
     z-index: 99;
 
-    ul{
+    ul {
         display: flex;
         gap: 24px;
-        list-style-type:none;
+        list-style-type: none;
         background-color: rgba(255, 255, 255, 0.1);
         padding: 20px 30px;
         border-radius: 12px;
@@ -66,91 +70,93 @@ header{
 
 }
 
-.logotipo{
+.logotipo {
     width: 70px;
 }
 
-section{
+section {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 4%;
 }
 
-.secao1{
-    background-image:url("assets/bg-sc1.svg") ;
+.secao1 {
+    background-image: url("assets/bg-sc1.svg");
     background-size: cover;
     background-position: center;
     height: 100vh;
     justify-content: center;
     align-items: center;
 
-    h2{
+    h2 {
         font-size: 6vw;
         color: rgb(218, 201, 201);
         mix-blend-mode: color-dodge;
     }
 }
 
-.conteudoPrincipal{
+.conteudoPrincipal {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    h1{
+    h1 {
         font-size: 50px;
         text-align: center;
         font-weight: 500;
     }
-    p{
+
+    p {
         font-size: 16px;
     }
 }
 
-.botoes{
+.botoes {
     display: flex;
     gap: 20px;
     margin-top: 28px;
-   
+
 }
 
-.botaoPrimario{
+.botaoPrimario {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px 20px 20px 25px;
     gap: 12px;
 
-    img{
+    img {
         width: 40px;
     }
 }
 
-.botaoSecundario{
+.botaoSecundario {
     padding: 16px;
     background-color: rgba(255, 255, 255, 0.103);
     color: rgba(255, 255, 255, 0.9);
 }
 
-.tituloSecao{
+.tituloSecao {
 
     font-size: 47px;
     font-weight: 500;
 }
 
-.secao2{
+.secao2 {
     align-items: center;
     background-image: url(assets/bg-sc2.svg);
-    position:relative;
+    position: relative;
 
-    p{
+    p {
         text-align: left;
     }
-}   
-.secao2::before{
-    content:"";
+}
+
+.secao2::before {
+    content: "";
     width: 100%;
     height: 100%;
-    background:linear-gradient(#030113 20%, #03011300, #030113);
+    background: linear-gradient(#030113 20%, #03011300, #030113);
     position: absolute;
     top: 0;
     left: 0;
@@ -158,54 +164,59 @@ section{
 
 }
 
-.divCards{
+.divCards {
     display: flex;
     flex-wrap: wrap;
-    margin:40px 0px 120px;
+    margin: 40px 0px 120px;
 }
 
-.card{
+.card {
     width: 32%;
-    padding: 32px 20px ;
-    h3{
+    padding: 32px 20px;
+
+    h3 {
         font-size: 24px;
         font-weight: 500;
         margin: 20px 0px 4px;
 
     }
-    img{
+
+    img {
         width: 70px;
     }
 }
 
-.branco{
+.branco {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    
+
 }
 
-.divImagens{
+.divImagens {
     display: flex;
     flex-wrap: wrap;
     margin: 52px 0px 80px;
     gap: 8px .5%;
-    img{
-        width:24%;
+
+    img {
+        width: 24%;
         ;
     }
 }
 
-.tituloSecao, .divCards{
+.tituloSecao,
+.divCards {
     z-index: 2;
 }
 
 @media screen and (max-width: 700px) {
 
-    .card{
+    .card {
         width: 49%;
     }
-    .divImagens{
-        img{
+
+    .divImagens {
+        img {
             width: 49%;
         }
     }
@@ -215,9 +226,11 @@ section{
 @media screen and (max-width: 700px) {
 
     header {
-        flex-direction: column;
-        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 20px;
+        flex-direction: row;
     }
 
     header ul {
@@ -269,7 +282,7 @@ section{
 }
 
 .menu-mobile {
-    display: none;
+    display: block;
     background: none;
     border: none;
     color: white;
