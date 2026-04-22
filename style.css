@@ -164,7 +164,7 @@ section{
     margin:40px 0px 120px;
 }
 
-.card{
+.card{  
     width: 32%;
     padding: 32px 20px ;
     h3{
@@ -178,11 +178,22 @@ section{
     }
 }
 
-.branco{
-    background-color: rgba(255, 255, 255, 0.1);
+.escuro{
+
+    background-color: #9994c07c;
     border-radius: 20px;
-    
+    margin-left: 5px;
+    margin-bottom: 5px;
+
 }
+
+.branco{
+    background-color: rgba(237, 235, 246, 0.679);
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
 
 .divImagens{
     display: flex;
@@ -197,6 +208,12 @@ section{
 
 .tituloSecao, .divCards{
     z-index: 2;
+}
+
+.resume{
+    max-width: 80%;
+    line-height: 1.8;
+    text-align: center;
 }
 
 @media screen and (max-width: 700px) {
