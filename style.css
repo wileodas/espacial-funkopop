@@ -206,7 +206,7 @@ section{
     }
 }
 
-.tituloSecao, .divCards{
+.tituloSecao, .divCards, .divImagens{
     z-index: 2;
 }
 
@@ -214,18 +214,6 @@ section{
     max-width: 80%;
     line-height: 1.8;
     text-align: center;
-}
-
-@media screen and (max-width: 700px) {
-
-    .card{
-        width: 49%;
-    }
-    .divImagens{
-        img{
-            width: 49%;
-        }
-    }
 }
 
 .menu-mobile {
@@ -237,7 +225,7 @@ section{
         cursor: pointer;
     }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
      .menu-mobile {
         display: block;
     }

@@ -101,6 +101,15 @@
             const menu = document.getElementById("menu");
             menu.classList.toggle("ativo");
         }
+
+        const links = document.querySelectorAll('#menu a');
+    
+     links.forEach(link => {
+        link.addEventListener('click', () => {
+            const menu = document.getElementById("menu");
+            menu.classList.remove("ativo"); // Remove a classe que mostra o menu
+        });
+    });
     </script>
 </body>
 
